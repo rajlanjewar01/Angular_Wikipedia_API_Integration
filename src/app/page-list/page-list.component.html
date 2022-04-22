@@ -1,0 +1,17 @@
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Page length</th>
+        <th scope="col">Word count</th>
+        <th scope="col">Snippet</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let page of pages">
+          <td>{{ page.title }}</td>
+          <td>{{ page.wordcount }}</td>
+          <td>{{ page.snippet }}</td>
+      </tr>
+    </tbody>
+  </table>
