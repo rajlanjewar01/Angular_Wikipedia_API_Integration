@@ -3,7 +3,7 @@
         <div class="col mt-4 shadow-sm border p-4">
             <h3>Wiki Search</h3>
             <app-search-bar (submitted)="onTerms($event)"></app-search-bar>
-            <app-page-list [pages]="pages"></app-page-list>
+            <app-page-list *ngIf="pages.length" [pages]="pages"></app-page-list>
         </div>
     </div>
 </div>
