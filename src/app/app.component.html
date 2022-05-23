@@ -2,6 +2,7 @@
     <div class="row">
         <div class="col mt-4 shadow-sm border p-4">
             <h3>Wiki Search</h3>
+            <p>Enter a keyword to search in wikipedia</p>
             <app-search-bar (submitted)="onTerms($event)"></app-search-bar>
             <app-page-list *ngIf="pages.length" [pages]="pages"></app-page-list>
         </div>
